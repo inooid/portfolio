@@ -8,15 +8,19 @@
   margin 0.2em 0
   padding 0.2em 0
 
-// Responsive: Portrait tablets and up
-@media screen and (min-width: 768px)
-  .container
-    max-width 730px
+*
+  box-sizing: border-box
 
+body
+  font-family: 'Open Sans', sans-serif
 
 // Component styles are injected through grunt
 // injector
+@import '00_general/mixins.styl';
+@import '00_general/normalize.styl';
+@import '01_style_guide/buttons.styl';
 @import 'account/login/login.styl';
 @import 'admin/admin.styl';
 @import 'main/main.styl';
+@import 'sidebar/sidebar.styl';
 // endinjector
